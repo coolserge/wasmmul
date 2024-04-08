@@ -16,7 +16,7 @@
             //const wasmBase64 = 'AGFzbQEAAAABBwFgAn9/AX8DAgEABwcBA2FkZAAACgkBBwAgACABags=';
             const fs = new LightningFS('testfs');
             const wasmBase64 = await new Promise((resolve, reject) => {
-                fs.readFile('/foo/wasmBase64', 'utf8', function (err, data) {
+                fs.readFile('/wasmmul/wasmBase64', 'utf8', function (err, data) {
                     if (err) {
                         reject(err);
                     } else {
